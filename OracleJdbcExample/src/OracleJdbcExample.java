@@ -23,7 +23,9 @@ public class OracleJdbcExample {
       
         //creating connection to Oracle database using JDBC
         Connection conn = DriverManager.getConnection(url,props);
-
+        
+        
+        //create our sql select statement
         String sql ="select CUST_LAST_NAME, CUST_CITY, CUST_STATE from demo_customers";
         
 
